@@ -90,7 +90,7 @@ if __name__ == "__main__":
     print(pi_cum)
     
     # Bernouilli variables [G x K]
-    pkc = npr.beta(1,1,(G,K))  # uniform
+    pkc = npr.beta(1,1,(G,K))  # uniform   ## IS THIS CORRECT?
     
     # Very inefficient, but likely correct
     # 14s for 10,000 observations
