@@ -75,7 +75,7 @@ def computeFrequencies(izeros, G):
 
 if __name__ == "__main__":
     # Nb observations (i)
-    N = 100000
+    N = 500
     
     # Nb groups (G)
     G = 4
@@ -99,5 +99,6 @@ if __name__ == "__main__":
     # Much more efficient
     # 0.9s for 10,000 observations
     # 1.2s for 100,000 observations
-    generateAllObservationsEfficient(N, pi, pkc, G)
+    data = generateAllObservationsEfficient(N, pi, pkc, G)
+    np.save("synthetic_data.npy", data)
 
